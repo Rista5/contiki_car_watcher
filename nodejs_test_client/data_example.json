@@ -1,0 +1,16 @@
+{
+    "data": {
+        "Platform": "native",
+        "Seq #": 2,
+        "Uptime (sec)": 48020,
+        "Def Route": "fd00::1",
+        "RSSI (dBm)": 0,
+        "sens_data": {
+            "temp": "-500.000000",
+            "batt": "-1.000000",
+            "speed": "-1.000000",
+            "rev": "-1.000000",
+            "gas": "-1.000000"
+        }
+    }
+}

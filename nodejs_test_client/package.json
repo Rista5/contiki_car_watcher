@@ -1,0 +1,14 @@
+{
+  "name": "nodejs_test_client",
+  "version": "1.0.0",
+  "description": "Nodejs console application for testing cnotiki-ng watcher",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "Uros Vukic",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.6.0"
+  }
+}

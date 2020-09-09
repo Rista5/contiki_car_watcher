@@ -1,0 +1,20 @@
+#ifndef CAR_WATCHER
+#define CAR_WATCHER
+
+// TYPES OF MQTT MESSAGES THAT WILL BE SENT TO APP
+#define UNDEFINED_MESSAGE 0
+#define SENSOR_READING 1
+#define START_SENDING 2
+#define STOP_SENDING 3
+#define SEND_WARNING 4
+#define STOP_WARNING 5
+#define TURN_OFF_CAR 6
+#define ENABLE_CAR_ENGINE 7
+#define GET_SENSOR_PUBLISH_INTERVAL 8
+#define SET_READING_INTERVAL 9
+
+#define EVENT_KEY "\"event\""
+#define CHANGE_INTERVAL_KEY "\"newInterval\""
+#define CLIENT_ID "client1"
+
+#endif /* CAR_WATCHER */
