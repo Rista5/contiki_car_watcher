@@ -77,7 +77,6 @@ const process_input = (num, channel, userId) => {
             break;
         case mqMs.msg_event_num.SET_READING_INTERVAL:
             console.log('Inesrt new interval');
-            // setReadingInterval(channel, userId);
             intervalCallback = setReadingInterval;
             break;
         default: 
@@ -126,8 +125,6 @@ amqp.connect('amqp://localhost', function(error0, connection){
                 console.log("SENDER: ");
                 var dotLoc = msg.fields.routingKey.indexOf(".");
                 console.log(msg.fields.routingKey.substring(0, dotLoc));
-                console.log('DATA:');
-                console.log(msg.content);
                 console.log('RECEIVED MESSAGE: ');
                 let msgText = msg.content.toString();
                 console.log(msgText)

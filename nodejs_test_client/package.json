@@ -4,7 +4,8 @@
   "description": "Nodejs console application for testing cnotiki-ng watcher",
   "main": "./index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "nat": "node ./nat64.js"
   },
   "author": "Uros Vukic",
   "license": "MIT",
