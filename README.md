@@ -1,18 +1,18 @@
-# Car-Watcher - Contiki-ng OS application
+# Car-Watcher - Contiki-NG OS application
 Car-Watcher is application that takes care of all your vehicles that you rent/lend to other people.  
-Contiki-ng Car-Watcher client application is collecting vehicle data and sending it to car_watcher platform where it is processed and saved.  
+Contiki-NG Car-Watcher client application is collecting vehicle data and sending it to car_watcher platform where it is processed and saved.  
 
 
 ## This project consists of 3 folders:  
-- contiki_ng - contains Car-Watcher Contiki-ng app code
-- nodejs_test_client - contains code for Nodejs app to test functionalities of Contiki-ng app
-- rabbitmq - contains Dockerfile for RabbitMQ image that is used as a broker between Contiki-ng app and backend
+- contiki_ng - contains Car-Watcher Contiki-NG app code
+- nodejs_test_client - contains code for Nodejs app to test functionalities of Contiki-NG app
+- rabbitmq - contains Dockerfile for RabbitMQ image that is used as a broker between Contiki-NG app and backend
 
-## Contiki-ng app setup
+## Contiki-NG app setup
 Use Docker for running the app.  
 Download the official image from Docker Hub ( https://hub.docker.com/r/contiker/contiki-ng/tags ).
 
-Clone official repository for Contiki-ng ( https://github.com/contiki-ng/contiki-ng.git ) and run the following command to start a contiki docker container ( as described in docs https://github.com/contiki-ng/contiki-ng/wiki/Docker ): docker run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=$CNG_PATH,destination=/home/user/contiki-ng -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/bus/usb:/dev/bus/usb -ti contiker/contiki-ng  
+Clone official repository for Contiki-NG ( https://github.com/contiki-ng/contiki-ng.git ) and run the following command to start a contiki docker container ( as described in docs https://github.com/contiki-ng/contiki-ng/wiki/Docker ): docker run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=$CNG_PATH,destination=/home/user/contiki-ng -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/bus/usb:/dev/bus/usb -ti contiker/contiki-ng  
 
 Copy app code in examples folder ( .contiki-ng/examples/app ), attach to docker container and navigate to application folder. To build application code run: `make target=native`. After build, run `sudo car_watcher.native` to start the application.
 

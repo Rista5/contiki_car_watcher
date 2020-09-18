@@ -53,4 +53,4 @@ async function setupRabbitMQConnection(connStr, queueName, exchange, queueBindin
 
 
 const localChanngel = setupRabbitMQConnection(connectionStringLocal, queueName, exchange, queueBindings, handleContikiMsg, 5672);
-const clusterChannel = setupRabbitMQConnection(connectionStringCluster, queueName, exchange, queueBindings, handleClusterMsg, 31178);
+const clusterChannel = setupRabbitMQConnection(connectionStringCluster, queueName, exchange, queueBindings, handleClusterMsg, 30123);
